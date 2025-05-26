@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to the Home Page</h1>
+    <div>
+        <input type="text" name="tafera" class="box" placeholder="digite aqui">
+        {% for User in usuario_consulta %}
+        <tr><td>{{User.id}}</td> <td>{{User.nome}}</td> <td>{{User.email}}</td> <td>{{User.cpf}}</td> <td><a href="/delete/{{User.id}}">Deletar</a></td> </tr>
+        {% endfor %}
+        
+    </div>
+    <a href="/delete">excluir tarefa</a>
+</body>
+</html>

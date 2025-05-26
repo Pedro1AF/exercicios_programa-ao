@@ -1,0 +1,15 @@
+input{
+    height: 15vh;
+    width: 100vw;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgba(105, 101, 101, 0.418);
+    margin: 0;
+}
+
+.box{
+    font-size: 20px;
+    height: 25vh;
+    width: 70vw;
+}
